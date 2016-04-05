@@ -11,6 +11,14 @@
     <title></title>
   </head>
   <body>
-    Запустилось! :)
+    <div>
+      <tr>
+        <td>Посещений :</td>
+        <%--<td><%=(request.getAttribute("curent_count"))%></td>--%>
+        <td><%=(request.getAttribute("curent_count") == null
+                ? "error"
+                : request.getAttribute("curent_count").toString())%></td>
+      </tr>
+    </div>
   </body>
 </html>
